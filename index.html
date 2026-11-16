@@ -134,6 +134,35 @@
     .plane{filter:drop-shadow(0 0 8px rgba(229,192,103,.28))}.plane-track path{stroke:#d1b366}.cursor-glow:before{background:radial-gradient(circle,rgba(218,179,90,.12),transparent 70%)}
     .lantern{border-color:rgba(250,224,153,.9);background:radial-gradient(ellipse,#ffe8a4 0,#c9973f 55%,rgba(177,126,39,.18) 72%);box-shadow:0 0 16px rgba(255,214,115,.8)}
     @media(prefers-reduced-motion:reduce){.top-note,.eyebrow,.names,.amp,.subtitle,.diamond,.message-card h2,.message-card .signature,.footer strong,.reveal-title,.intro,.message-card p,.footer,.scroll-hint{animation:none;background-position:50% 50%}}
+    /* Silver mirror surfaces with red chrome lettering. */
+    :root{--ink:#edf0f2;--ink-soft:#e2e6e9;--gold:#a72c3d;--gold-light:#861d30;--gold-dim:#b9c0c6;--cream:#4c222a;--muted:#79565c;--line:rgba(116,126,136,.32)}
+    html,body{background:#e7eaed;color:#4c222a}
+    body{background:radial-gradient(ellipse at 50% 2%,rgba(255,255,255,.9),transparent 54%),linear-gradient(180deg,#f1f3f5 0%,#dce1e5 55%,#cbd1d6 100%)}
+    .video-wash{background:linear-gradient(180deg,rgba(228,232,236,.68),rgba(216,222,227,.7) 44%,rgba(202,209,215,.76))}
+    body.opened .video-wash{background:linear-gradient(180deg,rgba(225,230,234,.62),rgba(211,218,223,.65) 44%,rgba(197,205,211,.72))}
+    .background-film{filter:brightness(.86) saturate(0) grayscale(1) blur(4px)}
+    body.opened .background-film{opacity:.38}
+    .stars{opacity:.12;background-image:radial-gradient(1px 1px at 12% 21%,rgba(97,108,119,.8) 50%,transparent 100%),radial-gradient(1px 1px at 83% 16%,rgba(139,149,158,.8) 50%,transparent 100%),radial-gradient(1px 1px at 65% 74%,rgba(97,108,119,.7) 50%,transparent 100%)}
+    .stars:before,.stars:after,.sparkle{color:#aeb7be;text-shadow:0 0 12px rgba(160,170,178,.4)}
+    .frame{border-color:rgba(94,105,116,.28);box-shadow:inset 0 0 30px rgba(126,137,148,.04)}
+    .frame:before,.frame:after{color:#82909b;text-shadow:0 0 12px rgba(120,132,143,.2)}
+    .hero:before{background:radial-gradient(ellipse at 50% 4%,rgba(255,255,255,.9),transparent 64%),linear-gradient(180deg,transparent,rgba(157,168,177,.14))}
+    .hero:after{background:repeating-linear-gradient(177deg,transparent 0 15px,rgba(105,117,128,.1) 16px,transparent 18px 33px)}
+    .top-note,.eyebrow,.names,.amp,.subtitle,.diamond,.message-card h2,.message-card .signature,.footer strong,.reveal-title,.intro,.message-card p,.footer,.scroll-hint{background:linear-gradient(105deg,#71192b 3%,#ad2c41 20%,#d9dfe3 35%,#fff 43%,#a5adb4 50%,#bd4050 61%,#8f1c31 78%,#e0e4e7 91%,#791b2e 100%);background-size:260% 100%;background-position:0% 50%;background-clip:text;-webkit-background-clip:text;color:transparent;text-shadow:0 1px 0 rgba(255,255,255,.6),0 1px 14px rgba(110,25,43,.13);animation:mirror-sweep 7s ease-in-out infinite}
+    .divider{color:#a72c3d}.divider:before,.divider:after{background:linear-gradient(90deg,transparent,#c0c7cd,#9f263a)}
+    .action{border-color:rgba(135,37,54,.56);background:linear-gradient(120deg,rgba(255,255,255,.62),rgba(182,190,197,.28),rgba(255,255,255,.62));color:#8b2135;box-shadow:0 8px 24px rgba(75,39,47,.09);backdrop-filter:blur(12px)}
+    .action:hover{background:rgba(255,255,255,.85);box-shadow:0 10px 28px rgba(75,39,47,.15)}
+    .message-card{border-color:rgba(108,119,129,.32);background:linear-gradient(145deg,rgba(255,255,255,.58),rgba(196,203,209,.42));box-shadow:inset 0 0 38px rgba(255,255,255,.7),0 24px 70px rgba(54,64,74,.12);backdrop-filter:blur(14px)}
+    .message-card:before,.message-card:after{color:#a52b3d}
+    .reveal{background:radial-gradient(ellipse at 50% 35%,#fff 0,#e8ecef 60%,#cdd3d8 100%)}
+    .reveal:before{border-color:rgba(96,107,118,.3)}
+    .reveal-card{border-color:rgba(105,116,127,.35);background:linear-gradient(145deg,rgba(247,249,250,.96),rgba(215,221,226,.94));box-shadow:0 18px 70px rgba(58,68,78,.15),inset 0 0 50px rgba(255,255,255,.8)}
+    .reveal-card:before,.reveal-card:after{color:#8c969f}
+    .seal,.seal-mark{color:#9b2539;filter:drop-shadow(0 0 14px rgba(137,37,54,.18))}.seal-mark{text-shadow:0 2px 10px rgba(255,255,255,.85)}
+    .seal svg circle,.seal svg path{stroke:#9e2c40!important}
+    .plane{filter:drop-shadow(0 0 8px rgba(109,120,131,.24))}.plane-track path{stroke:#9d2a3f}.cursor-glow:before{background:radial-gradient(circle,rgba(203,209,214,.24),transparent 70%)}
+    .lantern{border-color:rgba(130,141,151,.8);background:radial-gradient(ellipse,#fff 0,#c4cbd1 58%,rgba(122,133,144,.14) 74%);box-shadow:0 0 16px rgba(190,198,205,.65)}
+    @media(prefers-reduced-motion:reduce){.top-note,.eyebrow,.names,.amp,.subtitle,.diamond,.message-card h2,.message-card .signature,.footer strong,.reveal-title,.intro,.message-card p,.footer,.scroll-hint{animation:none;background-position:50% 50%}}
   </style>
 </head>
 <body class="locked">
