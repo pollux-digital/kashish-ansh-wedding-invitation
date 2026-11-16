@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#080806">
+  <meta name="theme-color" content="#fff9f7">
   <meta name="description" content="A wedding invitation for Kashish and Ansh.">
   <title>Kashish &amp; Ansh · Wedding Invitation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
-    :root{color-scheme:dark;--ink:#080806;--ink-soft:#100f0b;--gold:#d6b66b;--gold-light:#f2dfa7;--gold-dim:#987b3e;--cream:#f3ead2;--muted:#c8b98e;--line:rgba(214,182,107,.47);--serif:"Cormorant Garamond",Georgia,serif;--sans:Montserrat,Arial,sans-serif}
+    :root{color-scheme:light;--ink:#fff9f7;--ink-soft:#f8eeeb;--gold:#b42c3f;--gold-light:#8f2333;--gold-dim:#d59a9f;--cream:#66242d;--muted:#a76b70;--line:rgba(164,39,55,.28);--serif:"Cormorant Garamond",Georgia,serif;--sans:Montserrat,Arial,sans-serif;--script:"Great Vibes",cursive}
     *{box-sizing:border-box}html{overflow-x:clip;scroll-behavior:smooth;background:var(--ink)}body{margin:0;overflow-x:clip;background:radial-gradient(ellipse at 50% 18%,#18150d 0,#080806 55%,#050504 100%);color:var(--cream);font-family:var(--sans);font-size:16px;min-height:100vh}body.locked{overflow:hidden}button,a{font:inherit}button{color:inherit}button:focus-visible,a:focus-visible{outline:2px solid var(--gold-light);outline-offset:5px}.skip-link{position:fixed;z-index:40;left:12px;top:-70px;padding:12px 16px;background:var(--gold-light);color:#120f08}.skip-link:focus{top:12px}
     .stars,.petals,.plane-layer,.cursor-glow,.sparkles,.lantern-field{position:fixed;inset:0;pointer-events:none}.stars{z-index:0;overflow:hidden;background-image:radial-gradient(1px 1px at 12% 21%,rgba(255,239,186,.9) 50%,transparent 100%),radial-gradient(1px 1px at 83% 16%,rgba(255,228,150,.7) 50%,transparent 100%),radial-gradient(1px 1px at 65% 74%,rgba(255,248,219,.7) 50%,transparent 100%),radial-gradient(1px 1px at 20% 83%,rgba(224,187,96,.55) 50%,transparent 100%);background-size:290px 310px;opacity:.48;mask-image:linear-gradient(#000,transparent 82%)}.stars:before,.stars:after{content:"✦";position:absolute;color:#dfc578;text-shadow:0 0 11px #e3c46f;animation:twinkle 4s ease-in-out infinite;font-size:13px}.stars:before{left:14%;top:23%}.stars:after{right:16%;top:42%;animation-delay:1.6s}.sparkles{z-index:1}.sparkle{position:absolute;left:var(--x);top:var(--y);color:#e7ce8a;animation:twinkle var(--speed) ease-in-out infinite;animation-delay:var(--delay)}.sparkle:before{content:"✦";font-size:10px;text-shadow:0 0 9px currentColor}.petals{z-index:1;overflow:hidden}.petal{position:absolute;top:-15vh;width:8px;height:14px;border-radius:90% 10% 90% 10%;background:linear-gradient(145deg,#f1d98f,#9c7536);opacity:.45;animation:fall var(--fall) linear infinite;animation-delay:var(--delay);left:var(--left)}
     .page{position:relative;z-index:2;min-height:100vh;padding:26px 16px max(36px,env(safe-area-inset-bottom));display:flex;flex-direction:column;align-items:center}.frame{position:fixed;z-index:4;pointer-events:none;inset:10px 10px 10px;border:1px solid rgba(204,166,83,.38);border-radius:2px;box-shadow:inset 0 0 30px rgba(190,150,60,.035)}.frame:before,.frame:after{content:"❧";position:absolute;color:var(--gold);font-family:var(--serif);font-size:clamp(40px,8vw,76px);line-height:1;text-shadow:0 0 12px rgba(233,199,115,.35)}.frame:before{left:-3px;top:-8px;transform:rotate(-30deg)}.frame:after{right:-3px;bottom:-11px;transform:rotate(150deg)}
@@ -23,6 +23,42 @@
     @media(min-width:700px){.page{padding-top:35px}.hero{min-height:calc(100vh - 115px)}.seal{width:132px;height:132px}.below{min-height:65vh}.message-card{padding:54px 44px}.frame{inset:16px}}
     @media(max-width:390px){.page{padding-inline:12px}.names{font-size:clamp(47px,12vw,62px)}.hero{padding-inline:4px}.reveal-card{min-height:70vh;padding-inline:18px}.intro{font-size:19px}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.petals,.sparkles,.plane-layer,.cursor-glow,.lantern-field{display:none!important}.message-card{opacity:1;transform:none}}
+    /* A warm, cinematic palette inspired by the supplied sunset invitation. */
+    :root{--ink:#fff9f5;--ink-soft:#fff1ed;--gold:#a91f35;--gold-light:#8e1b30;--gold-dim:#d99a91;--cream:#651f2b;--muted:#a36b70;--line:rgba(142,27,48,.3)}
+    html,body{background:#fff9f5;color:var(--cream)}
+    body{background:radial-gradient(ellipse at 50% 5%,rgba(255,218,195,.72),transparent 48%),linear-gradient(180deg,#fff8f3 0%,#fff4f0 52%,#f8e6e1 100%)}
+    .stars{opacity:.27;background-image:radial-gradient(1px 1px at 12% 21%,rgba(169,31,53,.85) 50%,transparent 100%),radial-gradient(1px 1px at 83% 16%,rgba(169,31,53,.65) 50%,transparent 100%),radial-gradient(1px 1px at 65% 74%,rgba(169,31,53,.65) 50%,transparent 100%)}
+    .stars:before,.stars:after,.sparkle{color:#b52d43;text-shadow:0 0 12px rgba(181,45,67,.45)}
+    .petal{background:linear-gradient(145deg,#f4c6b7,#ae2840);opacity:.55}
+    .frame{border-color:rgba(142,27,48,.22);box-shadow:inset 0 0 30px rgba(142,27,48,.025)}
+    .frame:before,.frame:after{color:#a91f35;text-shadow:0 0 12px rgba(169,31,53,.24)}
+    .hero{isolation:isolate;overflow:hidden}
+    .hero:before{content:"";position:absolute;z-index:-1;left:50%;bottom:7%;width:min(110vw,980px);height:40%;transform:translateX(-50%);background:radial-gradient(ellipse at 50% 4%,rgba(255,213,180,.68),transparent 62%),linear-gradient(180deg,transparent 0%,rgba(222,151,138,.08) 48%,rgba(206,116,115,.14) 100%);filter:blur(3px);border-radius:50%}
+    .hero:after{content:"";position:absolute;z-index:-1;left:-20%;right:-20%;bottom:2%;height:17%;opacity:.48;background:repeating-linear-gradient(177deg,transparent 0 15px,rgba(169,31,53,.11) 16px,transparent 18px 33px);mask-image:linear-gradient(transparent,#000 45%,transparent);animation:sea-drift 12s ease-in-out infinite alternate}
+    .top-note,.eyebrow,.names,.amp,.subtitle,.diamond,.message-card h2,.message-card .signature,.footer strong,.reveal-title{color:#9f1f34}
+    .names,.reveal-title{font-family:var(--script);font-weight:400;text-transform:none;letter-spacing:0;text-shadow:0 2px 0 rgba(255,255,255,.88),0 0 22px rgba(174,37,55,.15);line-height:1.04}
+    .names{font-size:clamp(78px,17vw,140px)}
+    .amp{font-size:.58em;font-style:normal}
+    .intro,.message-card p,.reveal-copy{color:#74464b}
+    .divider{color:#b42b42}.divider:before,.divider:after{background:linear-gradient(90deg,transparent,#d7a099,#ae263c)}
+    .action{border-color:rgba(153,31,51,.6);background:rgba(255,255,255,.42);color:#922036;box-shadow:0 8px 24px rgba(135,34,52,.08);backdrop-filter:blur(9px)}
+    .action:hover{background:rgba(255,255,255,.78);box-shadow:0 10px 28px rgba(135,34,52,.15)}
+    .scroll-hint,.footer{color:rgba(116,70,75,.75)}
+    .scroll-hint span{color:#a91f35}
+    .message-card{border-color:rgba(153,31,51,.25);background:rgba(255,255,255,.55);box-shadow:inset 0 0 38px rgba(255,255,255,.55),0 24px 70px rgba(121,42,50,.10);backdrop-filter:blur(12px)}
+    .message-card:before,.message-card:after{color:#ab263d}
+    .reveal{background:radial-gradient(ellipse at 50% 35%,#fffdfb 0,#fff2ed 58%,#f1d9d3 100%)}
+    .reveal:before{border-color:rgba(153,31,51,.26)}
+    .reveal-card{border-color:rgba(153,31,51,.3);background:radial-gradient(ellipse at 50% 35%,rgba(255,255,255,.92),rgba(255,245,240,.88) 72%);box-shadow:0 18px 70px rgba(121,42,50,.12),inset 0 0 50px rgba(255,255,255,.8)}
+    .seal,.seal-mark{color:#a32238;filter:drop-shadow(0 0 14px rgba(169,31,53,.16))}.seal-mark{text-shadow:0 2px 10px rgba(255,255,255,.8)}
+    .seal svg circle,.seal svg path{stroke:#a6293d!important}
+    .plane{filter:drop-shadow(0 0 8px rgba(169,31,53,.22))}.plane-track path{stroke:#ae263c}.cursor-glow:before{background:radial-gradient(circle,rgba(218,91,105,.12),transparent 70%)}
+    .lantern{border-color:rgba(160,31,52,.8);background:radial-gradient(ellipse,#fff0c7 0,#df7180 55%,rgba(177,39,62,.15) 72%);box-shadow:0 0 16px rgba(215,88,104,.58)}
+    @keyframes sea-drift{from{transform:translateX(-2%) translateY(2px)}to{transform:translateX(2%) translateY(-5px)}}
+    .opened .hero .seal,.opened .hero .eyebrow,.opened .hero .names,.opened .hero .divider,.opened .hero .subtitle,.opened .hero .intro,.opened .hero .action{animation:romantic-arrive .9s both}
+    .opened .hero .eyebrow{animation-delay:.12s}.opened .hero .names{animation-delay:.25s}.opened .hero .divider{animation-delay:.4s}.opened .hero .subtitle{animation-delay:.48s}.opened .hero .intro{animation-delay:.56s}.opened .hero .action{animation-delay:.66s}
+    @keyframes romantic-arrive{from{opacity:0;transform:translateY(17px) scale(.98);filter:blur(5px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+    @media(prefers-reduced-motion:reduce){.hero:after{animation:none}}
   </style>
 </head>
 <body class="locked">
@@ -81,7 +117,7 @@
       const reveal=document.getElementById('reveal');
       const openButton=document.getElementById('openInvite');
       const invitation=document.getElementById('invitation');
-      const open=()=>{if(reveal.classList.contains('gone'))return;document.body.classList.remove('locked');reveal.classList.add('opening');window.setTimeout(()=>{reveal.classList.add('gone');invitation.focus({preventScroll:true});},850);};
+      const open=()=>{if(reveal.classList.contains('gone'))return;document.body.classList.remove('locked');document.body.classList.add('opened');reveal.classList.add('opening');window.setTimeout(()=>{reveal.classList.add('gone');invitation.focus({preventScroll:true});},850);};
       openButton.addEventListener('click',open);
       document.addEventListener('keydown',event=>{if(!reveal.classList.contains('gone')&&(event.key==='Enter'||event.key===' ')){if(event.target===document.body||event.target===reveal){event.preventDefault();open();}}});
       const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
