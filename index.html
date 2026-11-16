@@ -59,10 +59,26 @@
     .opened .hero .eyebrow{animation-delay:.12s}.opened .hero .names{animation-delay:.25s}.opened .hero .divider{animation-delay:.4s}.opened .hero .subtitle{animation-delay:.48s}.opened .hero .intro{animation-delay:.56s}.opened .hero .action{animation-delay:.66s}
     @keyframes romantic-arrive{from{opacity:0;transform:translateY(17px) scale(.98);filter:blur(5px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
     @media(prefers-reduced-motion:reduce){.hero:after{animation:none}}
+    .background-film{position:fixed;z-index:0;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;visibility:hidden;transition:opacity 1.2s ease,visibility 1.2s ease;filter:brightness(.62) saturate(.88) blur(4px);transform:scale(1.04)}
+    .video-wash{position:fixed;z-index:1;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(255,249,245,.60),rgba(255,241,237,.76) 42%,rgba(255,240,234,.82))}
+    body.opened .background-film{opacity:.64;visibility:visible}
+    body.opened .video-wash{background:linear-gradient(180deg,rgba(255,249,245,.34),rgba(255,241,237,.52) 42%,rgba(255,240,234,.66))}
+    .page{background:transparent}
+    .reveal-card{justify-content:flex-end;gap:16px;padding:14px 14px 26px}
+    .save-date-art{width:100%;min-height:0;flex:1;object-fit:contain;filter:drop-shadow(0 8px 20px rgba(121,42,50,.1));animation:poster-arrive 1.2s both}
+    .reveal-card .action{margin-top:0;position:relative;z-index:1}
+    .names,.reveal-title,.message-card h2,.eyebrow,.subtitle,.message-card .signature{background:linear-gradient(105deg,#7f172d 5%,#b82940 34%,#f1a097 52%,#a21c35 69%,#741629 95%);background-clip:text;-webkit-background-clip:text;color:transparent;text-shadow:0 1px 0 rgba(255,255,255,.4),0 0 18px rgba(169,31,53,.12)}
+    .intro,.message-card p,.footer,.scroll-hint,.top-note{background:linear-gradient(105deg,#7f172d 5%,#b82940 36%,#dc827d 51%,#a21c35 70%,#741629 95%);background-clip:text;-webkit-background-clip:text;color:transparent;text-shadow:0 1px 0 rgba(255,255,255,.3),0 0 14px rgba(169,31,53,.08)}
+    .reveal-title{font-family:var(--script);text-transform:none;letter-spacing:0}
+    .amp{color:#a91f35}
+    @keyframes poster-arrive{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+    @media(prefers-reduced-motion:reduce){.background-film{display:none}.save-date-art{animation:none}}
   </style>
 </head>
 <body class="locked">
   <a class="skip-link" href="#invitation">Skip to invitation</a>
+  <video class="background-film" id="backgroundFilm" playsinline muted loop preload="none" aria-hidden="true"><source src="./celebration-background.mp4" type="video/mp4"></video>
+  <div class="video-wash" aria-hidden="true"></div>
   <div class="stars" aria-hidden="true"></div>
   <div class="sparkles" id="sparkles" aria-hidden="true"></div>
   <div class="petals" id="petals" aria-hidden="true"></div>
@@ -72,13 +88,7 @@
 
   <section class="reveal" id="reveal" aria-label="Open wedding invitation">
     <div class="reveal-card">
-      <div class="seal" aria-hidden="true">
-        <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" fill="none" stroke="#d6b66b" stroke-width="1.2"/><circle cx="60" cy="60" r="48" fill="none" stroke="#d6b66b" stroke-opacity=".52"/><path d="M60 2 64 9 72 6 75 14 84 13 85 22 94 24 92 33 100 38 95 46 102 53 96 60 101 68 94 74 96 83 87 86 86 95 77 95 73 104 64 101 60 110 54 102 45 105 41 96 32 96 32 87 23 83 27 74 20 68 25 60 19 52 27 46 22 38 30 33 27 24 36 22 36 13 45 14 49 6 57 9Z" fill="none" stroke="#9a7839" stroke-width=".7"/></svg>
-        <span class="seal-mark">K&amp;A</span>
-      </div>
-      <p class="eyebrow">A celebration of love</p>
-      <h1 class="reveal-title">Kashish <span class="amp">&amp;</span><br>Ansh</h1>
-      <p class="reveal-copy">You are warmly invited</p>
+      <img class="save-date-art" src="./save-the-date.svg" alt="Save the Date — Kashish and Ansh">
       <button class="action" id="openInvite" type="button" aria-controls="invitation">Open the invitation <span aria-hidden="true">✦</span></button>
     </div>
   </section>
@@ -117,7 +127,8 @@
       const reveal=document.getElementById('reveal');
       const openButton=document.getElementById('openInvite');
       const invitation=document.getElementById('invitation');
-      const open=()=>{if(reveal.classList.contains('gone'))return;document.body.classList.remove('locked');document.body.classList.add('opened');reveal.classList.add('opening');window.setTimeout(()=>{reveal.classList.add('gone');invitation.focus({preventScroll:true});},850);};
+      const backgroundFilm=document.getElementById('backgroundFilm');
+      const open=()=>{if(reveal.classList.contains('gone'))return;document.body.classList.remove('locked');document.body.classList.add('opened');if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){backgroundFilm.play().catch(()=>{});}reveal.classList.add('opening');window.setTimeout(()=>{reveal.classList.add('gone');invitation.focus({preventScroll:true});},850);};
       openButton.addEventListener('click',open);
       document.addEventListener('keydown',event=>{if(!reveal.classList.contains('gone')&&(event.key==='Enter'||event.key===' ')){if(event.target===document.body||event.target===reveal){event.preventDefault();open();}}});
       const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
