@@ -1,27 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1000" role="img" aria-labelledby="title desc">
   <title id="title">Save the Date — Kashish and Ansh</title>
-  <desc id="desc">A silvery mirror invitation card with the names Kashish and Ansh in script.</desc>
+  <desc id="desc">A black invitation card with the names Kashish and Ansh in gold script.</desc>
   <defs>
-    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".52" stop-color="#f0f2f4"/><stop offset="1" stop-color="#dfe3e7"/></linearGradient>
-    <linearGradient id="silver" x1="0" x2="1" y2="1"><stop stop-color="#515c67"/><stop offset=".28" stop-color="#bdc5cc"/><stop offset=".45" stop-color="#fff"/><stop offset=".62" stop-color="#87929d"/><stop offset=".82" stop-color="#e8ebee"/><stop offset="1" stop-color="#56616c"/></linearGradient>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#17150f"/><stop offset=".52" stop-color="#0d0c09"/><stop offset="1" stop-color="#050505"/></linearGradient>
+    <linearGradient id="gold" x1="0" x2="1" y2="1"><stop stop-color="#8f7134"/><stop offset=".28" stop-color="#d8bd76"/><stop offset=".45" stop-color="#fff1be"/><stop offset=".62" stop-color="#b38d43"/><stop offset=".82" stop-color="#f5e1a3"/><stop offset="1" stop-color="#80632e"/></linearGradient>
     <filter id="soft"><feGaussianBlur stdDeviation="28"/></filter>
   </defs>
   <rect width="720" height="1000" rx="20" fill="url(#paper)"/>
-  <ellipse cx="360" cy="820" rx="330" ry="140" fill="#aeb7bf" opacity=".2" filter="url(#soft)"/>
-  <rect x="28" y="28" width="664" height="944" rx="14" fill="none" stroke="#6f7a85" stroke-opacity=".34"/>
-  <rect x="40" y="40" width="640" height="920" rx="12" fill="none" stroke="#aeb7bf" stroke-opacity=".62"/>
-  <g fill="none" stroke="url(#silver)" stroke-width="2" opacity=".8">
+  <ellipse cx="360" cy="820" rx="330" ry="140" fill="#ae8a43" opacity=".16" filter="url(#soft)"/>
+  <rect x="28" y="28" width="664" height="944" rx="14" fill="none" stroke="#c5a45b" stroke-opacity=".42"/>
+  <rect x="40" y="40" width="640" height="920" rx="12" fill="none" stroke="#d8bd76" stroke-opacity=".5"/>
+  <g fill="none" stroke="url(#gold)" stroke-width="2" opacity=".86">
     <path d="M360 125c-62 0-112 50-112 112s50 112 112 112 112-50 112-112-50-112-112-112Z"/>
     <path d="M360 145c-51 0-92 41-92 92s41 92 92 92 92-41 92-92-41-92-92-92Z"/>
     <path d="M360 119v21m0 188v21M241 237h21m198 0h21M276 153l15 15m138 138 15 15m0-168-15 15m-138 138-15 15"/>
   </g>
-  <text x="360" y="250" text-anchor="middle" fill="#58636e" font-family="Montserrat,Arial,sans-serif" font-size="21" letter-spacing="8">SAVE THE DATE</text>
-  <path d="M230 390h110m40 0h110" stroke="#929da7" stroke-width="1" opacity=".72"/>
-  <path d="m360 380 10 10-10 10-10-10z" fill="url(#silver)"/>
-  <text x="360" y="510" text-anchor="middle" fill="url(#silver)" font-family="'Great Vibes','Brush Script MT',cursive" font-size="108">Kashish</text>
-  <text x="360" y="602" text-anchor="middle" fill="#68737e" font-family="'Cormorant Garamond',Georgia,serif" font-size="54" font-style="italic">&amp;</text>
-  <text x="360" y="710" text-anchor="middle" fill="url(#silver)" font-family="'Great Vibes','Brush Script MT',cursive" font-size="116">Ansh</text>
-  <path d="M274 770h172" stroke="#929da7" stroke-width="1" opacity=".62"/>
-  <text x="360" y="835" text-anchor="middle" fill="#68737e" font-family="'Cormorant Garamond',Georgia,serif" font-size="29" font-style="italic">A celebration of love</text>
-  <text x="360" y="900" text-anchor="middle" fill="#58636e" font-family="Montserrat,Arial,sans-serif" font-size="15" letter-spacing="5">WITH LOVE, KASHISH &amp; ANSH</text>
+  <text x="360" y="250" text-anchor="middle" fill="#d8bd76" font-family="Montserrat,Arial,sans-serif" font-size="21" letter-spacing="8">SAVE THE DATE</text>
+  <path d="M230 390h110m40 0h110" stroke="#c5a45b" stroke-width="1" opacity=".72"/>
+  <path d="m360 380 10 10-10 10-10-10z" fill="url(#gold)"/>
+  <text x="360" y="510" text-anchor="middle" fill="url(#gold)" font-family="'Great Vibes','Brush Script MT',cursive" font-size="108">Kashish</text>
+  <text x="360" y="602" text-anchor="middle" fill="#d8bd76" font-family="'Cormorant Garamond',Georgia,serif" font-size="54" font-style="italic">&amp;</text>
+  <text x="360" y="710" text-anchor="middle" fill="url(#gold)" font-family="'Great Vibes','Brush Script MT',cursive" font-size="116">Ansh</text>
+  <path d="M274 770h172" stroke="#c5a45b" stroke-width="1" opacity=".62"/>
+  <text x="360" y="835" text-anchor="middle" fill="#d8bd76" font-family="'Cormorant Garamond',Georgia,serif" font-size="29" font-style="italic">A celebration of love</text>
+  <text x="360" y="900" text-anchor="middle" fill="#d8bd76" font-family="Montserrat,Arial,sans-serif" font-size="15" letter-spacing="5">WITH LOVE, KASHISH &amp; ANSH</text>
 </svg>

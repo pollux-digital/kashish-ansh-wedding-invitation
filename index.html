@@ -105,6 +105,35 @@
     .lantern{border-color:rgba(130,141,151,.8);background:radial-gradient(ellipse,#fff 0,#c4cbd1 58%,rgba(122,133,144,.14) 74%);box-shadow:0 0 16px rgba(190,198,205,.65)}
     @keyframes mirror-sweep{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
     @media(prefers-reduced-motion:reduce){.top-note,.eyebrow,.names,.amp,.subtitle,.diamond,.message-card h2,.message-card .signature,.footer strong,.reveal-title,.intro,.message-card p,.footer,.scroll-hint{animation:none;background-position:50% 50%}}
+    /* Black and gold invitation styling with a soft, visible video backdrop. */
+    :root{--ink:#090909;--ink-soft:#11110f;--gold:#c5a45b;--gold-light:#f0d486;--gold-dim:#8e743c;--cream:#f1e7ca;--muted:#c4b58e;--line:rgba(210,178,102,.36)}
+    html,body{background:#080807;color:#f1e7ca}
+    body{background:radial-gradient(ellipse at 50% 4%,rgba(75,63,39,.28),transparent 48%),linear-gradient(180deg,#0b0b0a 0%,#090908 54%,#050505 100%)}
+    .video-wash{background:linear-gradient(180deg,rgba(5,5,5,.48),rgba(5,5,5,.38) 44%,rgba(5,5,5,.58))}
+    body.opened .video-wash{background:linear-gradient(180deg,rgba(5,5,5,.42),rgba(5,5,5,.34) 44%,rgba(5,5,5,.55))}
+    .background-film{opacity:0;filter:brightness(.68) saturate(.72) blur(3px)}
+    body.opened .background-film{opacity:.46}
+    .stars{opacity:.28;background-image:radial-gradient(1px 1px at 12% 21%,rgba(245,220,157,.88) 50%,transparent 100%),radial-gradient(1px 1px at 83% 16%,rgba(231,204,131,.75) 50%,transparent 100%),radial-gradient(1px 1px at 65% 74%,rgba(255,245,215,.7) 50%,transparent 100%)}
+    .stars:before,.stars:after,.sparkle{color:#e6c976;text-shadow:0 0 12px rgba(230,201,118,.48)}
+    .frame{border-color:rgba(210,178,102,.36);box-shadow:inset 0 0 30px rgba(190,150,60,.04)}
+    .frame:before,.frame:after{color:#d7b96c;text-shadow:0 0 12px rgba(233,199,115,.28)}
+    .hero:before{background:radial-gradient(ellipse at 50% 4%,rgba(196,159,77,.16),transparent 64%),linear-gradient(180deg,transparent,rgba(8,8,7,.22))}
+    .hero:after{background:repeating-linear-gradient(177deg,transparent 0 15px,rgba(223,190,112,.11) 16px,transparent 18px 33px)}
+    .top-note,.eyebrow,.names,.amp,.subtitle,.diamond,.message-card h2,.message-card .signature,.footer strong,.reveal-title,.intro,.message-card p,.footer,.scroll-hint{background:linear-gradient(105deg,#8f7134 3%,#d8bd76 24%,#fff1be 39%,#b38d43 54%,#f5e1a3 68%,#80632e 86%,#e6cc88 100%);background-size:250% 100%;background-position:0% 50%;background-clip:text;-webkit-background-clip:text;color:transparent;text-shadow:0 1px 0 rgba(255,255,255,.14),0 0 14px rgba(220,184,100,.13);animation:mirror-sweep 7s ease-in-out infinite}
+    .divider{color:#d5b66b}.divider:before,.divider:after{background:linear-gradient(90deg,transparent,#e0c478,#8f7134)}
+    .action{border-color:rgba(210,178,102,.7);background:linear-gradient(120deg,rgba(193,157,75,.16),rgba(255,237,188,.06),rgba(193,157,75,.16));color:#f0d486;box-shadow:0 8px 24px rgba(174,137,54,.1);backdrop-filter:blur(10px)}
+    .action:hover{background:rgba(203,169,93,.18);box-shadow:0 10px 28px rgba(210,178,102,.18)}
+    .message-card{border-color:rgba(210,178,102,.35);background:linear-gradient(145deg,rgba(30,28,22,.76),rgba(9,9,8,.78));box-shadow:inset 0 0 38px rgba(221,182,89,.05),0 24px 70px rgba(0,0,0,.3);backdrop-filter:blur(14px)}
+    .message-card:before,.message-card:after{color:#d4b56b}
+    .reveal{background:radial-gradient(ellipse at 50% 35%,#211d13 0,#0d0c09 60%,#050505 100%)}
+    .reveal:before{border-color:rgba(210,178,102,.38)}
+    .reveal-card{border-color:rgba(210,178,102,.4);background:linear-gradient(145deg,rgba(24,22,17,.96),rgba(8,8,7,.96));box-shadow:0 18px 70px rgba(0,0,0,.44),inset 0 0 50px rgba(215,179,95,.07)}
+    .reveal-card:before,.reveal-card:after{color:#c5a45b}
+    .seal,.seal-mark{color:#e1c579;filter:drop-shadow(0 0 14px rgba(231,194,104,.22))}.seal-mark{text-shadow:0 2px 10px #000}
+    .seal svg circle,.seal svg path{stroke:#d2b66c!important}
+    .plane{filter:drop-shadow(0 0 8px rgba(229,192,103,.28))}.plane-track path{stroke:#d1b366}.cursor-glow:before{background:radial-gradient(circle,rgba(218,179,90,.12),transparent 70%)}
+    .lantern{border-color:rgba(250,224,153,.9);background:radial-gradient(ellipse,#ffe8a4 0,#c9973f 55%,rgba(177,126,39,.18) 72%);box-shadow:0 0 16px rgba(255,214,115,.8)}
+    @media(prefers-reduced-motion:reduce){.top-note,.eyebrow,.names,.amp,.subtitle,.diamond,.message-card h2,.message-card .signature,.footer strong,.reveal-title,.intro,.message-card p,.footer,.scroll-hint{animation:none;background-position:50% 50%}}
   </style>
 </head>
 <body class="locked">
